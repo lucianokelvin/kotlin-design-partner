@@ -2,15 +2,6 @@ package singleton
 
 import singleton.aux.OperationHistory
 
-/*
-Singleton is a creational design pattern that allows you to ensure that a class has only one instance, while providing
-a global access point for that instance.
-
-Singleton in Kotlin -> To use the Singleton pattern in Kotlin just define the class as "object",
-that way it will have no constructors and all of its methods and attributes will be static.
- */
-
-
 object CalculatorSingleton {
 
     private const val name = "Calculator"
