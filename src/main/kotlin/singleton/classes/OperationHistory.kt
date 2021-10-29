@@ -1,4 +1,4 @@
-package singleton.aux
+package singleton.classes
 
 data class OperationHistory(val n1: Double, val operation: String, val n2: Double? = null, val result: Double) {
 

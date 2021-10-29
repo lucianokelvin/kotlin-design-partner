@@ -1,15 +1,26 @@
 package singleton
 
-import singleton.aux.OperationHistory
+import singleton.classes.OperationHistory
 
-object CalculatorSingleton {
-
-    private const val name = "Calculator"
+class CalculatorSingleton private constructor() {
 
     private val history: MutableList<OperationHistory> = mutableListOf()
 
+    companion object {
+        private var instance: CalculatorSingleton? = null
+
+        @Synchronized
+        fun getInstance(): CalculatorSingleton {
+            if (instance == null) {
+                instance = CalculatorSingleton()
+            }
+
+            return instance!!
+        }
+    }
+
     init {
-        println("Singleton $name Started")
+        println("CalculatorSingleton Started")
     }
 
     fun sum(n1: Double, n2: Double): Double {
