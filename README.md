@@ -1,4 +1,4 @@
-# Desing Partner In Kotlin - Factory Method
+#Factory Method
 
 The factory method is a creational pattern that allows creating object families always based on their abstract classes
 and not their concrete classes.
