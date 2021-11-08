@@ -1,6 +1,6 @@
-# Factory Method
+# Abstract Factory
 
-The factory method is a creational pattern that allows creating object families always based on their abstract classes
+The Abstract Factory is a creational pattern that allows creating object families always based on their abstract classes
 and not their concrete classes.
 
 In our example we have a GUI that changes the instances of the Button or Window depending on the OS used. The algorithm
