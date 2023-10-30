@@ -1,4 +1,4 @@
-# Design Partners in Kotlin
+# Design Patterns in Kotlin
 
 This is a project to show some ways that a developer can implement design patterns in Kotlin.
 
